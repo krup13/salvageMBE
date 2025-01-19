@@ -19,9 +19,9 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_new_journal_entry" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="729dp"-->
+<!--        tools:layout_editor_absoluteX="1dp"-->
+<!--        tools:layout_editor_absoluteY="1dp" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
