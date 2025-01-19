@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Salvage-MindBodyEarth</string>
+    <string name="today_s_journal_entry">Today\'s Journal Entry\n</string>
+    <string name="journalTitle">\nToday\'s Journal Entry</string>
+</resources>
