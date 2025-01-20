@@ -5,7 +5,12 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {}, version = 1)
+import com.example.salvage_mindbodyearth.Database.DAO.WorkoutPlanningDAOs.WorkoutDAO;
+import com.example.salvage_mindbodyearth.Database.DAO.WorkoutPlanningDAOs.WorkoutPlanDAO;
+import com.example.salvage_mindbodyearth.Entity.WorkoutPlanningEntities.Workout;
+import com.example.salvage_mindbodyearth.Entity.WorkoutPlanningEntities.WorkoutPlan;
+
+@Database(entities = {Workout.class, WorkoutPlan.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
     private static volatile AppDatabase INSTANCE;
@@ -22,4 +27,8 @@ public abstract class AppDatabase extends RoomDatabase {
         }
         return INSTANCE;
     }
+
+    public abstract WorkoutPlanDAO workoutPlanDAO();
+    public abstract WorkoutDAO workoutDAO();
+
 }

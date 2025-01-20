@@ -29,26 +29,26 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <EditText
-            android:id="@+id/workout_name_edit_text"
+            android:id="@+id/etWorkoutName"
             android:layout_width="377dp"
             android:layout_height="41dp"
             android:hint="Workout Name" />
 
         <EditText
-            android:id="@+id/workout_type_edit_text"
+            android:id="@+id/etWorkoutTypes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Workout Type" />
 
         <EditText
-            android:id="@+id/workout_sets_edit_text"
+            android:id="@+id/etWorkoutSet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Sets"
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/workout_reps_edit_text"
+            android:id="@+id/etWorkoutReps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Reps"

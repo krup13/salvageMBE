@@ -7,6 +7,7 @@ import androidx.room.Query;
 import androidx.room.Transaction;
 import androidx.room.Update;
 
+import com.example.salvage_mindbodyearth.Entity.WorkoutPlanningEntities.Workout;
 import com.example.salvage_mindbodyearth.Entity.WorkoutPlanningEntities.WorkoutPlan;
 import com.example.salvage_mindbodyearth.Entity.WorkoutPlanningEntities.WorkoutPlanWithWorkouts;
 
@@ -29,4 +30,8 @@ public interface WorkoutPlanDAO {
     @Transaction
     @Query("SELECT * FROM WorkoutPlan")
     public List<WorkoutPlanWithWorkouts> getWorkoutPlansWithWorkouts();
+
+    @Transaction
+    @Query("SELECT * FROM Workout WHERE workout_id = :id LIMIT 1")
+    Workout getWorkoutByWorkoutPlanId(int id);
 }
