@@ -10,7 +10,7 @@ import com.example.salvage_mindbodyearth.Database.DAO.WorkoutPlanningDAOs.Workou
 import com.example.salvage_mindbodyearth.Entity.WorkoutPlanningEntities.Workout;
 import com.example.salvage_mindbodyearth.Entity.WorkoutPlanningEntities.WorkoutPlan;
 
-@Database(entities = {Workout.class, WorkoutPlan.class}, version = 1)
+@Database(entities = {Workout.class, WorkoutPlan.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
 
     private static volatile AppDatabase INSTANCE;
