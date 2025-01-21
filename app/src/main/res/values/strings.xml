@@ -29,4 +29,8 @@
     <string name="carbon_footprint_icon">carbon footprint icon</string>
     <string name="Tips">Tips</string>
     <string name="journal">Journal</string>
+    <string name="workout_type">Workout Type</string>
+    <string name="workout_name">Workout Name</string>
+    <string name="sets">Sets:</string>
+    <string name="reps">Reps:</string>
 </resources>
